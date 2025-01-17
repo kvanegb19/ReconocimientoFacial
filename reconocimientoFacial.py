@@ -12,10 +12,6 @@ rostro_conocido2 = face_recognition.face_encodings(imagen_con_rostro2)[0]
 # Inicializar la cámara
 captura = cv2.VideoCapture(0)  # Usar la cámara predeterminada
 
-# Si utilizan la cámara del celular
-#ip="http://172.29.22.62:4747/video"
-#captura.open(ip)
-
 # Cargar el clasificador Haar Cascade para la detección de rostros
 clasificadorCascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 
